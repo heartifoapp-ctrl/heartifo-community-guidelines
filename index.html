@@ -1,94 +1,442 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Heartifo Community Guidelines</title>
+
+  <meta
+    name="description"
+    content="Heartifo Community Guidelines - Creating a safe and respectful ride experience for everyone."
+  />
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Arial,
+        sans-serif;
+      background: #f6f7f9;
+      color: #202124;
+      line-height: 1.7;
+    }
+
+    .header {
+      background: #ffffff;
+      border-bottom: 1px solid #eeeeee;
+      padding: 22px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .header-inner {
+      max-width: 900px;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-size: 25px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      color: #111111;
+    }
+
+    .logo span {
+      color: #e62020;
+    }
+
+    .badge {
+      font-size: 13px;
+      font-weight: 600;
+      color: #666666;
+      background: #f1f1f1;
+      padding: 7px 12px;
+      border-radius: 20px;
+    }
+
+    .hero {
+      max-width: 900px;
+      margin: 55px auto 30px;
+      padding: 0 20px;
+    }
+
+    .hero-icon {
+      width: 58px;
+      height: 58px;
+      border-radius: 18px;
+      background: #fff0f0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 42px;
+      line-height: 1.15;
+      letter-spacing: -1.2px;
+      color: #111111;
+    }
+
+    .intro {
+      margin-top: 16px;
+      max-width: 700px;
+      color: #666666;
+      font-size: 17px;
+    }
+
+    .updated {
+      margin-top: 15px;
+      font-size: 13px;
+      color: #999999;
+    }
+
+    .content {
+      max-width: 900px;
+      margin: 30px auto 70px;
+      padding: 0 20px;
+    }
+
+    .section {
+      background: #ffffff;
+      border: 1px solid #eeeeee;
+      border-radius: 18px;
+      padding: 25px 27px;
+      margin-bottom: 16px;
+      box-shadow: 0 3px 14px rgba(0, 0, 0, 0.035);
+    }
+
+    .section-number {
+      font-size: 12px;
+      font-weight: 700;
+      color: #e62020;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      margin-bottom: 5px;
+    }
+
+    h2 {
+      margin: 0 0 10px;
+      font-size: 20px;
+      color: #171717;
+    }
+
+    p {
+      margin: 0;
+      font-size: 15px;
+      color: #555555;
+    }
+
+    ul {
+      margin: 12px 0 0;
+      padding-left: 21px;
+      color: #555555;
+    }
+
+    li {
+      margin-bottom: 7px;
+      font-size: 15px;
+    }
+
+    .contact {
+      background: #111111;
+      color: #ffffff;
+      border-radius: 20px;
+      padding: 30px;
+      margin-top: 25px;
+    }
+
+    .contact h2 {
+      color: #ffffff;
+      margin-bottom: 8px;
+    }
+
+    .contact p {
+      color: #cccccc;
+    }
+
+    .email {
+      display: inline-block;
+      margin-top: 15px;
+      color: #ffffff;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .footer {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 20px 45px;
+      text-align: center;
+      color: #999999;
+      font-size: 13px;
+    }
+
+    @media (max-width: 600px) {
+      .header {
+        padding: 17px 16px;
+      }
+
+      .logo {
+        font-size: 22px;
+      }
+
+      .badge {
+        font-size: 11px;
+      }
+
+      .hero {
+        margin-top: 38px;
+        padding: 0 16px;
+      }
+
+      h1 {
+        font-size: 32px;
+      }
+
+      .intro {
+        font-size: 15px;
+      }
+
+      .content {
+        padding: 0 16px;
+        margin-top: 25px;
+      }
+
+      .section {
+        padding: 21px;
+        border-radius: 15px;
+      }
+
+      .contact {
+        padding: 24px;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-<h1>Heartifo Community Guidelines</h1>
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <div class="logo">
+        Heart<span>ifo</span>
+      </div>
 
-<p><strong>Last Updated:</strong> 18 September 2026</p>
+      <div class="badge">
+        Community Guidelines
+      </div>
+    </div>
+  </header>
 
-<h2>1. Respect Everyone</h2>
-<p>
-Treat customers, Captains and Heartifo support staff with respect.
-Harassment, threats, bullying, abusive behaviour or intimidation
-are not permitted.
-</p>
 
-<h2>2. No Discrimination</h2>
-<p>
-Heartifo does not permit discriminatory behaviour based on personal
-characteristics protected by applicable law.
-</p>
+  <!-- Hero -->
+  <section class="hero">
 
-<h2>3. Keep Rides Safe</h2>
-<p>
-Do not engage in dangerous, reckless or unlawful behaviour during
-a Heartifo ride. Follow applicable traffic and safety requirements.
-</p>
+    <div class="hero-icon">
+      🛡️
+    </div>
 
-<h2>4. No Illegal Activities</h2>
-<p>
-Heartifo must not be used for illegal activities, transportation of
-illegal goods or other unlawful purposes.
-</p>
+    <h1>
+      Community Guidelines
+    </h1>
 
-<h2>5. No Fraud or Misuse</h2>
-<p>
-Do not create fake accounts, provide false information, manipulate
-GPS/location information, abuse promotions or attempt to manipulate
-the Heartifo platform.
-</p>
+    <p class="intro">
+      Heartifo is built to create a safe, respectful and reliable
+      experience for everyone using our platform.
+    </p>
 
-<h2>6. Respect Property</h2>
-<p>
-Customers and Captains must respect each other's personal property
-and the vehicle used for the ride. Deliberate damage or misuse is
-not permitted.
-</p>
+    <div class="updated">
+      Last Updated: 18 September 2026
+    </div>
 
-<h2>7. Privacy and Personal Information</h2>
-<p>
-Do not unnecessarily share, publish or misuse another person's
-personal information, phone number, location or other private data.
-</p>
+  </section>
 
-<h2>8. Ratings and Reviews</h2>
-<p>
-Ratings and reviews should be honest and based on the actual ride
-experience. Fake, abusive, threatening or misleading reviews are
-not permitted.
-</p>
 
-<h2>9. Prohibited Items</h2>
-<p>
-Do not carry illegal, dangerous or hazardous items through Heartifo.
-Applicable laws and transportation safety requirements must always
-be followed.
-</p>
+  <!-- Content -->
+  <main class="content">
 
-<h2>10. Reporting a Problem</h2>
-<p>
-If you experience harassment, unsafe behaviour, fraud or another
-serious issue, please contact Heartifo Support as soon as possible.
-</p>
+    <section class="section">
+      <div class="section-number">01</div>
+      <h2>Respect Everyone</h2>
 
-<h2>11. Enforcement</h2>
-<p>
-Heartifo may investigate reported violations and may restrict,
-suspend or terminate an account where appropriate and permitted
-by applicable law.
-</p>
+      <p>
+        Treat customers, Captains and Heartifo support staff with
+        respect and courtesy. Harassment, threats, bullying,
+        intimidation or abusive behaviour are not permitted.
+      </p>
+    </section>
 
-<h2>12. Contact Us</h2>
-<p>
-<strong>Heartifo</strong><br>
-Email: heartifoapp@gmail.com
-</p>
+
+    <section class="section">
+      <div class="section-number">02</div>
+      <h2>Safety Comes First</h2>
+
+      <p>
+        Everyone using Heartifo should follow applicable safety and
+        traffic requirements. Do not engage in dangerous, reckless
+        or unlawful behaviour during a ride.
+      </p>
+    </section>
+
+
+    <section class="section">
+      <div class="section-number">03</div>
+      <h2>No Discrimination</h2>
+
+      <p>
+        Heartifo does not permit discriminatory behaviour or
+        harassment based on personal characteristics protected
+        under applicable law.
+      </p>
+    </section>
+
+
+    <section class="section">
+      <div class="section-number">04</div>
+      <h2>Honest Information</h2>
+
+      <p>
+        Keep your account and ride information accurate.
+        Do not create fake accounts or provide false information
+        to misuse Heartifo services.
+      </p>
+    </section>
+
+
+    <section class="section">
+      <div class="section-number">05</div>
+      <h2>No Fraud or Platform Abuse</h2>
+
+      <p>
+        Do not manipulate GPS information, abuse promotions,
+        create duplicate accounts, misuse payment systems,
+        or attempt to interfere with Heartifo's platform.
+      </p>
+    </section>
+
+
+    <section class="section">
+      <div class="section-number">06</div>
+      <h2>Respect Personal Property</h2>
+
+      <p>
+        Customers and Captains must respect each other's belongings
+        and the vehicle used during a ride. Deliberate damage or
+        misuse is not permitted.
+      </p>
+    </section>
+
+
+    <section class="section">
+      <div class="section-number">07</div>
+      <h2>Protect Personal Information</h2>
+
+      <p>
+        Do not unnecessarily share, publish or misuse another person's
+        phone number, location, account information or other private data.
+      </p>
+    </section>
+
+
+    <section class="section">
+      <div class="section-number">08</div>
+      <h2>Ratings & Reviews</h2>
+
+      <p>
+        Ratings and reviews should be honest and based on the actual
+        ride experience. Fake, abusive, threatening or misleading
+        reviews are not permitted.
+      </p>
+    </section>
+
+
+    <section class="section">
+      <div class="section-number">09</div>
+      <h2>No Illegal Activities</h2>
+
+      <p>
+        Heartifo must not be used for illegal activities,
+        transportation of illegal goods or any other unlawful purpose.
+      </p>
+    </section>
+
+
+    <section class="section">
+      <div class="section-number">10</div>
+      <h2>Prohibited Items</h2>
+
+      <p>
+        Do not carry illegal, dangerous or hazardous items through
+        Heartifo. Applicable laws and transportation safety
+        requirements must always be followed.
+      </p>
+    </section>
+
+
+    <section class="section">
+      <div class="section-number">11</div>
+      <h2>Report a Problem</h2>
+
+      <p>
+        If you experience harassment, unsafe behaviour, fraud or
+        another serious issue, contact Heartifo Support as soon as
+        possible so the matter can be reviewed.
+      </p>
+    </section>
+
+
+    <section class="section">
+      <div class="section-number">12</div>
+      <h2>Enforcement</h2>
+
+      <p>
+        Heartifo may investigate reported violations and may restrict,
+        suspend or terminate an account where appropriate and
+        permitted by applicable law.
+      </p>
+    </section>
+
+
+    <!-- Contact -->
+    <section class="contact">
+      <h2>Need Help?</h2>
+
+      <p>
+        If you have questions or need to report a serious issue,
+        please contact the Heartifo Support team.
+      </p>
+
+      <a
+        class="email"
+        href="mailto:heartifoapp@gmail.com"
+      >
+        heartifoapp@gmail.com
+      </a>
+    </section>
+
+  </main>
+
+
+  <footer class="footer">
+    © 2026 Heartifo. All rights reserved.
+  </footer>
 
 </body>
 </html>
